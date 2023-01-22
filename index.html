@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div id="displayed" style="text-align: right;" >
+             <input id="userinput" style="text-align: right;" placeholder="0">
+            </div>
+            <hr color="red">
+            <div>
+                <button onclick="press(1)">1</button>
+                <button onclick="press(2)">2</button>
+                <button onclick="press(3)">3</button>
+                <button style="background-color: yellow;" onclick="press('+')">+</button>
+            </div>
+            <div>
+                <button onclick="press(4)">4</button>
+                <button onclick="press(5)">5</button>
+                <button onclick="press(6)">6</button>
+                <button style="background-color: rgba(255, 255, 0, 0.685);" onclick="press('-')">-</button>
+            </div>
+            <div>
+                <button onclick="press(7)">7</button>
+                <button onclick="press(8)">8</button>
+                <button onclick="press(9)">9</button>
+                <button style="background-color: rgba(255, 255, 0, 0.511);" onclick="press('*')">*</button>
+            </div>
+            <div style="text-align: right;">
+                <button onclick="press('.')">.</button>
+                <button onclick="press('0')">0</button>
+                <button onclick="erase()">C</button>
+                <button style="background-color: rgba(255, 255, 0, 0.331);" onclick="press('/')">/</button>
+            </div>
+            <div style="text-align: right;">
+             <button  onclick="equal()" id="equall">=</button> 
+             <button style="background-color: rgba(255, 255, 0, 0.087);"  onclick="cross()" id="cross">X</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
